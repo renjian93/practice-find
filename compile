@@ -1,0 +1,10 @@
+#!/bin/sh
+set -e
+
+echo "Compile"
+
+mkdir -p target/classes 
+
+javac -d target/classes -classpath lib/servlet-api.jar src/main/java/com/baldur/turbo/shame/*.java
+
+echo "Compile done"
